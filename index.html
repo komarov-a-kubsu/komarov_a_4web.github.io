@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ex 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        body {
+            background-color: black;
+        }
+
+        footer {
+            display: flex;
+            text-align: left;
+            background-color: dimgray;
+            padding-top: 30px;
+        }
+
+        #wrapper-main {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #wrapper-main table {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            text-align: left;
+            flex: 1;
+            order: 2;
+        }
+
+        #wrapper-main form {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            text-align: left;
+            flex: 1;
+            order: 1;
+        }
+
+        #wrapper-list {
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #label-wrp {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+        }
+
+        .center {
+            display: flex;
+            justify-content: left;
+            text-align: left;
+            padding: auto;
+
+        }
+
+        #sub_btn {
+            display: flex;
+            justify-content: center;
+        }
+
+        #header-wrp {
+            display: flex;
+            justify-content: left;
+        }
+
+        @media screen and (min-width: 800px) {
+
+            #header-wrp {
+                display: flex;
+                justify-content: center;
+            }
+
+            #wrapper-main table {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: auto;
+                text-align: center;
+                flex: 1;
+                order: 1;
+            }
+
+            #wrapper-main form {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: center;
+                flex: 1;
+                order: 2;
+            }
+
+            #wrapper-list {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+
+            }
+
+            .center {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #label-wrp {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+            }
+
+            #sub_btn {
+                display: flex;
+                justify-content: left;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header-wrp" style="background-color: dimgray">
+        <div style="display: flex; width: 960px;">
+            <img style="float:left; margin:0px; width:80px; height:80px;" src="logo.png" alt="logo" title="Yu_D logo" />
+            <div style="padding:30px; padding-left:20px;">_Yu-D Site</div>
+        </div>
+    </header>
+    <br />
+
+    <nav id="wrapper-list" class="container">
+        <a href="https://example.com">Link1</a> -- <a href="https://example.com">Link2</a> --
+        <a href="https://example.com">Link3</a> -- <a href="https://example.com">Link4</a>
+    </nav>
+    <br />
+    <div class="container text-align center">
+        <div class="row">
+            <div class="col">
+                <ol>
+                    <li><a href="http://www.example.com">Ссылка1</a></li>
+                    <li><a href="https://www.example.com">Ссылка2</a></li>
+                    <li><a href="ftp://example.com/myfile.zip">Ссылка3</a></li>
+                    <li><a href="ftp://user:password@example.com/myfile.zip">Ссылка4</a></li>
+                    <li><a href="http://example.com/page#element_id">Cсылка5</a></li>
+                    <li><a href="https://wikipedia.com">Ссылка6</a></li>
+                    <li><a href="https://www.youtube.com">Ссылка7</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="text-align center">
+            <div class="row">
+                <div class="col">
+                    <table>
+                        <tr class="cht">
+                            <th>Column1</th>
+                            <th>Column2</th>
+                            <th>Column3</th>
+                        </tr>
+                        <tr class="ncht">
+                            <td colspan="3" style="text-align: center;">Union Cell</td>
+                        </tr>
+                        <tr class="cht">
+                            <td>Cell1</td>
+                            <td>Cell2</td>
+                            <td>Cell3</td>
+                        </tr>
+                        <tr class="ncht">
+                            <td>Cell1</td>
+                            <td>Cell2</td>
+                            <td>Cell3</td>
+                        </tr>
+                        <tr class="cht">
+                            <td>Cell1</td>
+                            <td>Cell2</td>
+                            <td>Cell3</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br />
+
+        <div class="text-align center">
+            <form action="/" method="POST">
+                <div class="container text-align center">
+                    <div class="row">
+                        <label>
+                            Имя:<br />
+                            <input class="xz" name="field-name-1" value="" />
+                        </label>
+                        <br />
+                    </div>
+                </div>
+                <br />
+
+                <div class="container text-align center mx-sm-auto">
+                    <div class="row">
+                        <label>
+                            email:<br />
+                            <input name="field-email" type="email" placeholder="Введите вашу почту" />
+                        </label><br />
+                    </div>
+                </div>
+                <br />
+
+                <div class="container text-align center mx-sm-auto">
+                    <div class="row">
+                        <label>
+                            Дата рождения:<br />
+                            <input name="field-date" value="2019-08-13" type="date" />
+                        </label>
+                    </div>
+                </div>
+                <br />
+
+
+                <div class="container text-align center mx-sm-auto">
+                    <div class="row">
+                        <br />
+                        <label>
+                            Пол:<br />
+                            <input type="radio" checked="checked" name="s" value="М" />
+                            М
+                        </label>
+                        <label>
+                            <input type="radio" name="s" value="Ж" />
+                            Ж
+                        </label>
+                    </div>
+                </div>
+                <br />
+
+                <div class="container text-align center mx-sm-auto">
+                    <div class="row">
+                        <div class="col">Кол-во конечностей:</div>
+                    </div>
+                </div>
+                <div class="container text-align center mx-sm-auto">
+                    <div class="row justify-content center">
+                        <div class="col">
+                            <label>
+                                <input type="radio" checked="checked" name="count" value="1" />
+                                <div>1</div>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="radio" name="count" value="2" />
+                                <div>2</div>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="radio" name="count" value="3" />
+                                <div>3</div>
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="radio" name="count" value="4" />
+                                <div>4</div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <br />
+
+                <div class="container text-align center mx-sm-auto">
+                    <div class="row">
+                        <label>
+                            Сверхспособности:
+                            <br />
+                            <select name="field-name-4[]" multiple="multiple">
+                                <option value="Значение1">бессмертие</option>
+                                <option value="Значение2" selected="selected">прохождение сквозь стены</option>
+                                <option value="Значение3" selected="selected">левитация</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+
+                <br />
+
+                <div class="container text-align center mx-sm-auto">
+                    <div class="row">
+                        <label>
+                            Биография:<br />
+                            <textarea class="cls" name="field-name-2"></textarea>
+                        </label>
+                    </div>
+                </div>
+
+                <br />
+
+                <div class="container text-align center mx-sm-auto">
+                    <div class="row">
+                        <div class="col">Чекбокс:</div>
+                    </div>
+                </div>
+
+                <div class="container text-align center">
+                    <div class="row">
+                        <br />
+                        <label>
+                            <input type="checkbox" checked="checked" name="check-1" />
+                            С контрактом ознакомлен (а)
+                        </label>
+                    </div>
+                </div>
+                <br />
+
+                <div class="container text-align center mx-sm-auto">
+                    <div class="row">
+                        <div class="col">кнопка «Отправить».</div>
+                    </div>
+                </div>
+
+                <div class="container text-align center mx-sm-auto">
+                    <div class="row">
+
+                        <div>
+                            <input id="sub_btn" type="submit" value="Отправить" />
+                        </div>
+                    </div>
+                </div>
+                <br />
+            </form>
+        </div>
+    </div>
+    <br />
+    <footer>
+        <div">Yu_D/Komarov.A</div>
+    </footer>
+</body>
+
+
+</html>
