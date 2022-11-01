@@ -1,0 +1,66 @@
+@font-face {
+  font-family: Aqum;
+  src: url(Aqum.ttf);
+}
+
+
+html,
+body {
+  background-color: black;
+  font-family: Aqum;
+  color: chartreuse;
+}
+
+table {
+  border-collapse: collapse;
+  border-radius: 9px;
+  overflow: hidden;
+  border-right: 2px solid black;
+}
+
+td,
+th {
+    padding: 2px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+tr.cht {
+  background: white;
+  font-family: Aqum;
+  font-size: small;
+  color: black;
+}
+
+tr.ncht {
+  background: gray;
+  font-family: Aqum;
+  font-size: small;
+  color: black;
+
+}
+a {
+  font-family: Aqum;
+  text-decoration: none;
+}
+
+A {
+  font-family: Aqum;
+  color: chartreuse;
+  font-size: small;
+  text-decoration: none;
+}
+
+A:visited {
+  font-family: Aqum;
+  color: chartreuse;
+  font-size: small;
+  text-decoration: none;
+
+  
+}
+div {
+  color: chartreuse;
+  font-family: Aqum;
+  font-size: small;
+}

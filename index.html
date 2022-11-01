@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Ex 4</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Главная</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<header>
+		<div class="container-fluid page" style="background-color: grey">
+			<div class="container">
+				<div class="row">
+					<div class="col-5 offset-5 col-md-4 offset-md-1 order-2">
+						<div class="h-100 py-0">
+							<div id="line">
+								<a>Yu_D Site</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-1 col-md-4 order-1">
+						<div class="h-100 py-0">
+							<div id="logo">
+								<img src="logo.png" width="100" height="100" alt="name" />
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+	</header>
+	<nav>
+		<div class="container" style="background-color: black">
+			<div class="row m-3">
+				<div class="col-12 col-md-12">
+					<ul class="menu nav flex-column nav flex-md-row nav justify-content-md-center">
+						<li class="mr-4"><a href="#Ссылки" title="Нумированный список гиперссылок">LINK1</a></li>
+						<li class="mr-4"><a href="#Таблица" title="Таблица с контентом">LINK2</a></li>
+						<li class="mr-4"><a href="#Форма" title="Перейти к заполнению формы">LINK3</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="container" style="background-color: black">
+		<div class="row">
+			<div class="col-md-6 order-2">
+				<ol>
+					<li><a href="http://example.com/">Ссылка 1</a></li>
+					<li><a href="https://example.com/">Ссылка 2</a></li>
+					<li><a href="https://example.com/">Ссылка 3</a></li>
+					<li><a href="https://example.com/">Ссылка 4</a></li>
+					<li><a href="https://example.com/">Ссылка 5</a></li>
+					<li><a href="https://example.com/">Ссылка 6</a></li>
+					<li><a href="https://example.com/">Ссылка 7</a></li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="container__row d-flex flex-column">
+			<div class="row mt-3 order-3 order-sm-2" style="background-color: black">
+				<div class="col-12 col-md-6">
+					<div class="table">
+						<table class="table table-bordered border-primary">
+							<tr class="cht">
+								<th>Column1</th>
+								<th>Column2</th>
+								<th>Column3</th>
+							</tr>
+							<tr class="ncht">
+								<td colspan="3" style="text-align: center;">Union Cell</td>
+							</tr>
+							<tr class="cht">
+								<td>Cell1</td>
+								<td>Cell2</td>
+								<td>Cell3</td>
+							</tr>
+							<tr class="ncht">
+								<td>Cell1</td>
+								<td>Cell2</td>
+								<td>Cell3</td>
+							</tr>
+							<tr class="cht">
+								<td>Cell1</td>
+								<td>Cell2</td>
+								<td>Cell3</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<div class="row mt-3 order-2 order-sm-3" style="background-color: black">
+				<div class="col-12 col-md-6">
+					<form action="/" method="POST">
+						<label>
+							Имя:
+							<br />
+							<input name="field-name-1" value="Введите имя" /> </label><br />
+						<label>
+							Почта:
+							<br />
+							<input name="field-email" value="Ваша электронная почта" type="email" />
+						</label>
+						<br />
+						<label>
+							Дата рождения:
+							<br />
+							<input name="field-date" value="2019-08-13" type="date" />
+						</label>
+						<br />
+						Пол:
+						<br />
+						<label>
+							<input type="radio" checked="checked" name="radio-group-0" value="М" />М
+						</label>
+						<label> <input type="radio" name="radio-group-0" value="Ж" />Ж </label><br />
+						Кол-во конечностей:
+						<br />
+						<label>
+							<input type="radio" checked="checked" name="radio-group-1" value="Значение1" />1</label>
+						<label>
+							<input type="radio" name="radio-group-1" value="Значение2" />2</label>
+						<label>
+							<input type="radio" name="radio-group-1" value="Значение3" />3</label>
+						<label>
+							<input type="radio" name="radio-group-1" value="Значение4" />4</label>
+						<label>
+							<input type="radio" name="radio-group-1" value="Значение5" />5</label>
+						<br />
+						<label>
+							Сверхспособности:
+							<br />
+							<select name="field-name-3[]" multiple="multiple">
+								<option value="Значение1">Бессмертие</option>
+								<option value="Значение2" selected="selected">
+									Прохождение сквозь стены
+								</option>
+								<option value="Значение3" selected="selected">Левитация</option>
+							</select></label>
+						<br />
+						<label>
+							Биография:
+							<br />
+							<textarea name="field-name-2">Напишите свою биографию</textarea>
+						</label>
+						<br />
+						<br />
+						<label>C контрактом ознакомлен(а)<input type="checkbox" name="check-1" /></label>
+						<br />
+						Отправить форму:
+						<input type="submit" value="Отправить" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid page mt-3" style="background-color: black">
+		<footer style="padding-top: 60px; background-color: grey;">
+			<div>Yu_D/Komarov.A</div>
+		</footer>
+	</div>
+</body>
+
+</html>
